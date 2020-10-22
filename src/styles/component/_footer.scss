@@ -1,0 +1,19 @@
+.ep-footer-app {
+  display: inline-block;
+  position: relative;
+  background-color: #005689;
+  margin: 0 auto;
+  width: 100%;
+  .epm-authority {
+    color: #fff;
+    text-align: center;
+    padding: 35px 10px;
+    height: 100px;
+    span {
+      font-size: 11px;
+    }
+    p {
+      font-size: 11px;
+    }
+  }
+}

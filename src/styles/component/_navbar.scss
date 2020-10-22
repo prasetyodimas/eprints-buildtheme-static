@@ -1,0 +1,7 @@
+.navigation {
+  background-color: #fff;
+  border-bottom: 1px solid #fff;
+  &:empty {
+    display: none;
+  }
+}

@@ -1,0 +1,45 @@
+#header {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  position: relative;
+  margin-bottom: 5px;
+  > * {
+    -moz-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin-bottom: 0;
+  }
+  .logo {
+    border-bottom: 0;
+    color: inherit;
+    font-family: Raleway, sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: .35em;
+    padding: 0;
+    text-transform: uppercase;
+  }
+  .icons {
+    text-align: right;
+    padding: 10px 0 0 0;
+  }
+  a {
+    &.icons:hover, &.logo:hover {
+      color: #2ebaae;
+    }
+  }
+}
+
+.header-slider-banner {
+  .banners-app {
+    display: flex;
+    width: 970px;
+    height: 185px;
+    left: 226px;
+    top: 88px;
+    background-color: #005689;
+  }
+}

@@ -1,0 +1,37 @@
+.ep-button-login {
+  background-color: #FFB43D;
+  border: none;
+  color: white;
+  padding: 3px 37px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  text-decoration: none;
+  outline: 0;
+  &:visited {
+    color: #ffd;
+  }
+  &:hover, &:focus {
+    color: #ffd;
+  }
+}
+
+.ep-button-search {
+  background-color: #FFB43D;
+  border: none;
+  color: white;
+  padding: 10px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  text-decoration: none;
+  outline: 0;
+  &:visited {
+    color: #ffd;
+  }
+  &:hover, &:focus {
+    color: #ffd;
+  }
+}
