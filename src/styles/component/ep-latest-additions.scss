@@ -1,0 +1,22 @@
+.ep-content-latest-addition {
+  padding: 20px;
+  margin-bottom: 10px;
+  h2 {
+    margin: 0;
+  }
+  .ep_search_feed {
+    display: inline-flex;
+    margin-bottom: 10px;
+    .ep_search_feed__icons {
+      position: relative;
+      left: 6px;
+      top: 5px;
+    }
+  }
+  .ep_latest_tool_list {
+    .ep_search_result {
+      display: flex;
+      margin-bottom: 10px;
+    }
+  }
+}

@@ -144,12 +144,11 @@ dl dd {
 
 /* typography */
 a {
-  color: #2ebaae;
-  text-decoration: underline;
+  color: #005689;
   outline: 0;
 
   &:visited {
-    color: #2ebaae;
+    color: #005689;
     text-decoration: underline;
     outline: 0;
   }
@@ -171,7 +170,7 @@ dl.ep_action_list dd {
 }
 
 .ep_tm_key_tools a:hover, a:hover {
-  color: #2ebaae;
+  color: #FFB43D;
 }
 
 .person_name {
@@ -712,4 +711,12 @@ img {
   .ep-content-statistic {
     margin-top: 20px;
   }
+}
+
+.arrow-down {
+  width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #f00;
 }
