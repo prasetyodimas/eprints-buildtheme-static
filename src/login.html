@@ -33,34 +33,6 @@
         <!-- <link rel="stylesheet" href="/apw_template/styles/base.css" /> -->
         <!-- <link rel="stylesheet" href="/apw_template/styles/site.css" /> -->
         <!-- <link rel="stylesheet" href="/apw_template/styles/apw_main.css" /> -->
-        <script>
-            // Give $ back to prototype.js; create new alias to jQuery.
-            jQuery.noConflict();
-            jQuery(document).ready(function($) {
-                //Clones the EP menu to the top menu.
-                $('#main_page .ep_tm_key_tools').clone().appendTo('#login_status');
-                //Then remove the old class, and add the navbar classes to make it fit in.
-                $('header .ep_tm_key_tools').removeClass('ep_tm_key_tools').addClass('nav navbar-nav navbar-right').attr('id', 'ep_menu_top');
-                // remove the first part of the menu if you are already signed in (as the span buggers up the nice navbar menu)
-                $('header #ep_menu_top li:first-child').has("span").remove();
-                //left hand side menu. Adds the id, then the needed classes for bootstrap to style the menu
-                $('#main_page .ep_tm_key_tools').removeClass('ep_tm_key_tools').attr('id', 'ep_menu').addClass('hidden-xs');
-                $('#main_page ul#ep_menu ').addClass('list-group');
-                $('#main_page ul#ep_menu li').addClass('list-group-item');
-                //$('#main_page ul#ep_menu li:first-child:contains("Logged")').addClass('active');
-                $('#main_page ul#ep_menu li:first-child:contains("Logged")').closest('.list-group-item').addClass('active');
-                $('#main_page ul#ep_menu li:first-child span a').addClass('list-group-item-text');
-                // If the user isn't logged in, style it a little
-                //$('#main_page ul#ep_menu li:first-child a[href$="cgi/users/home"]').addClass('list-group-item-heading');
-                var log_in_btn = $('#main_page ul#ep_menu li:first-child a[href$="cgi/users/home"]');
-                var admin_btn = $('#main_page ul#ep_menu li a[href$="cgi/users/home?screen=Admin"]');
-                //log_in_btn.addClass('btn btn-primary');
-                //admin_btn.addClass('btn btn-default');
-                log_in_btn.closest('li').addClass('active');
-                //admin_btn.closest('li').removeClass('list-group-item');
-                //log_in_btn.closest('ul').removeClass('list-group').addClass('list-unstyled');
-            });
-        </script>
     </head>
 
     <body>
@@ -130,137 +102,37 @@
                                 </nav>
                             </div>
                         </div>
-                        <div class="col-md-8 col-lg-8">
+                        <div class="col-md-8 col-lg-8 pl-0">
                             <div class="ep-content-center">
-                                <h2><b>Repository Kemendikbud</b></h2>
-                                <h4 class="ep">Welcome to Repositori Institusi Kementerian Pendidikan dan Kebudayaan</h4>
-                                <p class="ep-intro__repository">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                                    the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-                                    type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                                    but also the leap into electronic typesetting, remaining essentially unchanged.
-                                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
-                                    passages, and more recently with desktop publishing software like, Aldus PageMaker including
-                                    versions of Lorem Ipsum.
+                                <h2 class="text-center"><b>Login Area</b></h2>
+                                <div class="ep-content-login">
+                                    <p class="ep-content-login__information">Please enter your username and password. If you have forgotten your password, you may <a href="" class="bg-color-link"><b>reset</b></a> it.</p>
+                                    <form method="post" accept-charset="utf-8" action="/cgi/user/login/" enctype="multipart/form-data">
+                                        <div class="form-group row">
+                                          <label for="username_acces" class="col-sm-2 col-form-label">Username</label>
+                                          <div class="col-sm-10 mb-15">
+                                            <input type="text" class="form-control">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <label for="password_acces" class="col-sm-2 col-form-label">Password</label>
+                                          <div class="col-sm-10 mb-15">
+                                            <input type="password" class="form-control">
+                                          </div>
+                                        </div>
+                                        <div class="form-submit">
+                                            <button type="submit" class="btn btn-login">Login</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="ep-note__forusers">
+                                <p>
+                                    For members of staff wishing to deposit, please manage your publications and other research outputs using the Research Information System.
+                                    PGR students: For information on how to deposit your thesis, please use this guide
+                                    Note: If you have arrived at this page having attempted to view a publication in the repository, it is likely that it is under an access restriction. You may be able to view it by returning to
+                                    the Abstract page for the publication and following the link to the publisher's web site or by using the Request a Copy link. For further information please contact the Research Repository administration.
                                 </p>
-                                <div class="ep-searchbox">
-                                    <div class="epm-searchbox_kemdikbud">
-                                        <form method="get" accept-charset="utf-8" action="" style="display:inline" role="search" aria-label="Publication simple search">
-                                        <div id="search_box" class="col-md-offset-0 col-md-10 col-sm-10 col-xs-9">
-                                            <input type="search" placeholder="Search the repository" class="ep_tm_searchbarbox epm-form-input" name="q" aria-labelledby="searchbutton">
-                                        </div>
-                                        <div class="col-md-2 col-sm-2 col-xs-3">
-                                            <button id="searchbutton" class="ep-button-search pull-right" value="Search" type="submit" name="_action_search">Search</button>
-                                        </div>
-                                            <input type="hidden" name="_action_search" value="Search">
-                                            <input type="hidden" name="_order" value="bytitle">
-                                            <input type="hidden" name="basic_srchtype" value="ALL">
-                                            <input type="hidden" name="_satisfyall" value="ALL">
-                                        <input type="hidden" name="limit" value="10"><input type="hidden" name="limit" value="10"></form>
-                                    </div>
-                                </div>
-                                <div class="ep-content-latest-addition">
-                                    <div class="front_block row no-gutter" id="latest_additions_block">
-                                        <h2>
-                                            Latest additions
-                                            <span class="ep_search_feed">
-                                                <a href="/cgi/latest_tool?output=RSS2" aria-label="Latest additions RSS Feed"><i aria-hidden="true" class="fa fa-rss fa-fw"></i></a>
-                                            </span>
-                                        </h2>
-                                        <div id="fplatest">
-                                            <table class="ep_latest_tool_list">
-                                                <tbody>
-                                                    <tr class="ep_search_result">
-                                                        <td style="padding-left: 0.5em;">1.</td>
-                                                        <td style="padding-left: 0.5em;">
-                                                            <span class="person_name">Webb, Abigail LM</span> and <span class="person_name">Hibbard, Paul B</span>
-
-                                                            (2020)
-
-                                                            <a href="http://repository.essex.ac.uk/28935/">'Suppression durations for facial expressions under breaking continuous flash suppression: effects of faces’ low-level image properties.' </a>
-
-                                                            Scientific Reports, 10 (1). ISSN 2045-2322
-                                                        </td>
-                                                        <td style="padding-left: 0.5em;" align="center">
-                                                            <div style="white-space: nowrap;">
-                                                                <a onmouseover="EPJS_ShowPreview( event, 'doc_preview_87759' );" onmouseout="EPJS_HidePreview( event, 'doc_preview_87759' );" class="ep_document_link" href="/28935/1/s41598-020-74369-2.pdf">
-                                                                    <img class="ep_doc_icon" alt="[img]" src="/28935/1.hassmallThumbnailVersion/s41598-020-74369-2.pdf" border="0" />
-                                                                </a>
-                                                                <div id="doc_preview_87759" class="ep_preview">
-                                                                    <table>
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td>
-                                                                                    <img class="ep_preview_image" alt="" src="/28935/1.haspreviewThumbnailVersion/s41598-020-74369-2.pdf" border="0" />
-                                                                                    <div class="ep_preview_title">Preview</div>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr class="ep_search_result">
-                                                        <td style="padding-left: 0.5em;">2.</td>
-                                                        <td style="padding-left: 0.5em;">
-                                                            <span class="person_name">Scarlett, Kelly</span> and <span class="person_name">Denman, Sandra</span> and <span class="person_name">Clark, David R</span> and <span class="person_name">Forster, Jack</span> and
-                                                            <span class="person_name">Vanguelova, Elena</span> and <span class="person_name">Brown, N</span> and <span class="person_name">Whitby, Corinne</span>
-
-                                                            (2020)
-
-                                                            <a href="http://repository.essex.ac.uk/28934/">'Relationships between nitrogen cycling microbial community abundance and composition reveal the indirect effect of soil pH on oak decline.' </a>
-
-                                                            The ISME Journal. ISSN 1751-7362
-                                                        </td>
-                                                        <td style="padding-left: 0.5em;" align="center">
-                                                            <div style="white-space: nowrap;">
-                                                                <a class="ep_document_link" href="/28934/1/s41396-020-00801-0.pdf" onmouseover="EPJS_ShowPreview( event, 'doc_preview_87751' );" onmouseout="EPJS_HidePreview( event, 'doc_preview_87751' );">
-                                                                    <img class="ep_doc_icon" alt="[img]" src="/28934/1.hassmallThumbnailVersion/s41396-020-00801-0.pdf" border="0" />
-                                                                </a>
-                                                                <div id="doc_preview_87751" class="ep_preview">
-                                                                    <table>
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td>
-                                                                                    <img class="ep_preview_image" alt="" src="/28934/1.haspreviewThumbnailVersion/s41396-020-00801-0.pdf" border="0" />
-                                                                                    <div class="ep_preview_title">Preview</div>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr class="ep_search_result">
-                                                        <td style="padding-left: 0.5em;">3.</td>
-                                                        <td style="padding-left: 0.5em;">
-                                                            <span class="person_name">Liou, Rushiun</span> and <span class="person_name">Rao-Nicholson, Rekha</span>
-
-                                                            (2020)
-
-                                                            <a href="http://repository.essex.ac.uk/28926/">'Multinational Enterprises and Sustainable Development Goals: A Foreign Subsidiary Perspective on Tackling Wicked Problems.' </a>
-
-                                                            Journal of International Business Policy. ISSN 2522-0691 (In Press) Item availability may be restricted.
-                                                        </td>
-                                                        <td style="padding-left: 0.5em;" align="center">
-                                                            <div style="white-space: nowrap;">
-                                                                <a href="/28926/3/JIBP%20paper%20v.%2019102020.pdf" class="ep_document_link"><img class="ep_doc_icon" alt="[img]" src="/style/images/fileicons/text.png" border="0" /></a>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div>
-                                            <p>
-                                                <a href="http://repository.essex.ac.uk/cgi/latest_tool">Further recent additions</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>

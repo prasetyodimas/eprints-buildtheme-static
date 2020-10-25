@@ -649,38 +649,6 @@ img {
   }
 }
 
-@media only screen and (max-width: 767px) {
-  .branding {
-    background-image: none;
-    text-align: center;
-    min-height: 56px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .menu.horizontal {
-    > ul {
-      height: inherit;
-    }
-
-    li {
-      float: none;
-
-      a {
-        border-bottom: 1px solid #80a1ac;
-      }
-    }
-
-    > ul > li > ul {
-      left: 60px;
-    }
-  }
-}
-
-.ep_tm_page_content {
-  width: auto;
-}
-
 .ep_name_citation a {
   background-color: #848485 !important;
 }
@@ -702,6 +670,15 @@ img {
 }
 
 .ep-content-center {
+  h2.ep-heading__about {
+    line-height: 27px;
+  }
+  h2.ep-heading__help {
+    line-height: 27px;
+  }
+  h2.ep-heading__policies {
+    line-height: 27px;
+  }
   .ep-panel__statistic {
     margin-top: 25px;
     h2 {
@@ -711,6 +688,22 @@ img {
   .ep-content-statistic {
     margin-top: 20px;
   }
+  .ep-content-login {
+    padding: 0 38px;
+    .ep-content-login__information {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 14px;
+      margin-bottom: 10px;
+    }
+  }
+}
+.ep-note__forusers {
+  border: 1px solid #E4E4E4;
+  padding: 25px;
+  margin: 0 25px 25px 25px;
+  color: #000;
 }
 
 .arrow-down {
