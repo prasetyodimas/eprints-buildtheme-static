@@ -79,7 +79,7 @@
   }
 }
 
-#menu {
+nav.navigation__menu {
   ul {
     -moz-user-select: none;
     -webkit-user-select: none;
@@ -119,6 +119,10 @@
 
     a.opener.active + ul, span.opener.active + ul {
       display: block;
+      -moz-transition: color .2s ease-in-out;
+      -webkit-transition: color .2s ease-in-out;
+      -ms-transition: color .2s ease-in-out;
+      transition: color .2s ease-in-out;
     }
 
     a.opener.active:before, span.opener.active:before {
@@ -126,6 +130,14 @@
       -webkit-transform: rotate(-180deg);
       -ms-transform: rotate(-180deg);
       transform: rotate(-180deg);
+    }
+
+    span.trigger-collapse {
+      img.icon {
+        position: relative;
+        right: 10px;
+        float: right;
+      }
     }
   }
 
@@ -145,17 +157,16 @@
       a {
         font-size: 11px;
         font-weight: 400;
-        color: #3c3b3b;
+        color: #fff;
       }
       span {
         font-size: 11px;
         font-weight: 400;
-        color: #3c3b3b;
+        color: #fff;
       }
       > li {
         margin: .125em 0 0 0;
         padding: 1em 0 1em 25px;
-        border-bottom: 1px solid;
       }
     }
   }

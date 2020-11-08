@@ -18,6 +18,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no" />
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
 
     <body>
@@ -64,16 +65,19 @@
 
                 <div class="ep-content-main">
                     <div class="row">
-                        <div class="col-md-4 col-lg-4">
+                        <div class="col-md-4 col-lg-4" id="sidebar-action">
                             <!-- Sidebar -->
                             <div id="sidebar">
-                                <nav id="menu">
+                                <nav id="menu" class="navigation__menu">
                                     <ul>
                                         <li><a href="/index.html">home</a></li>
                                         <li><a href="/about.html">about</a></li>
                                         <li>
-                                            <span class="opener">Browse</span>
-                                            <ul>
+                                            <span class="opener trigger-collapse">
+                                                Browse
+                                                <img src="/assets/icon/arrow-top.svg" alt="icon-triangle" class="icon"/>
+                                            </span>
+                                            <ul class="">
                                                 <li><a href="">browse by years</a></li>
                                                 <li><a href="">browse by subjects</a></li>
                                                 <li><a href="">browse by divisions</a></li>
@@ -86,8 +90,24 @@
                                     </ul>
                                 </nav>
                             </div>
+                            <div class="ep-section-rss">
+                                <ul class="ep-ul__rss">
+                                    <li>
+                                        <img src="/assets/icon/rss-small.svg" alt="icon-rss"/>
+                                        <a href="">Atom</a>
+                                    </li>
+                                    <li>
+                                        <img src="/assets/icon/rss-small.svg" alt="icon-rss"/>
+                                        <a href="">RSS.1.0</a>
+                                    </li>
+                                    <li>
+                                        <img src="/assets/icon/rss-small.svg" alt="icon-rss"/>
+                                        <a href="">RSS.2.0</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="col-md-8 col-lg-8 pl-0">
+                        <div class="col-md-8 col-lg-8 pl-0" id="replace-class">
                             <div class="ep-content-center">
                                 <h2><b>Repository Kemendikbud</b></h2>
                                 <h4 class="ep">Welcome to Repositori Institusi Kementerian Pendidikan dan Kebudayaan</h4>
@@ -249,18 +269,5 @@
             </div>
         </div>
     </div>
-    <!-- Scripts -->
-    <script>
-        // document.observe("dom:loaded",function() {
-        //     new EPJS_Stats_Table ({ 'context': {
-        //         'range':'1m',
-        //         'datatype':'downloads'
-        //         },
-        //             'options': {
-        //             'container_id': 'top10items', 'top': 'authors', 'view': 'Table', 'limit': '10', 'title': 'Top Authors'
-        //         }
-        //     });
-        // });
-    </script>
     </body>
 </html>

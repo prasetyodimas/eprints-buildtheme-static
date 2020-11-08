@@ -32,4 +32,9 @@ module.exports = {
     rules: loaders,
   },
   plugins,
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+    },
+  }
 };

@@ -1,0 +1,122 @@
+.menu {
+  margin-bottom: 5px;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &.horizontal {
+    li {
+      display: block;
+      float: left;
+      padding: 0;
+      margin: 0;
+
+      a {
+        text-decoration: none;
+        text-align: left;
+        color: #fff;
+        display: block;
+      }
+    }
+
+    > ul {
+      height: 50px;
+      background-color: #014359;
+      position: relative;
+
+      > li {
+        line-height: 25px;
+
+        > a {
+          padding: 0 25px 0 25px;
+          margin-right: 2px;
+        }
+
+        &.selected > a, > a:hover {
+          background-color: #0a96a9;
+        }
+      }
+    }
+
+    ul li:hover > ul {
+      visibility: visible;
+    }
+
+    > ul > li > ul {
+      position: absolute;
+      display: block;
+      left: inherit;
+      top: inherit;
+      width: 150px;
+      height: auto;
+
+      > li {
+        line-height: 26px;
+        background-color: #ccc;
+        width: 100%;
+        border-bottom: 1px solid #014359;
+
+        > a {
+          padding: 0 15px;
+          color: #333;
+        }
+
+        &.selected > a, > a:hover {
+          background-color: #0a96a9;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  &.vertical {
+    li {
+      line-height: 26px;
+      display: block;
+      padding: 0;
+      margin: 0;
+      background-color: #0a96a9;
+      text-decoration: none;
+      color: #fff;
+      background-color: #848485;
+      text-decoration: none;
+      color: #fff;
+
+      a {
+        border-bottom: 1px solid #80a1ac;
+        background-color: #014359;
+        display: block;
+        padding: 0 5px 0 10px;
+        text-decoration: none;
+        color: #fff;
+
+        &:hover {
+          background-color: #0a96a9;
+        }
+      }
+
+      &.selected {
+        a:hover {
+          background-color: #0a96a9;
+        }
+
+        > a {
+          background-color: #002d3c;
+        }
+      }
+    }
+
+    > ul > li > ul > li > {
+      a {
+        padding-left: 20px;
+      }
+
+      ul > li > a {
+        padding-left: 30px;
+      }
+    }
+  }
+}

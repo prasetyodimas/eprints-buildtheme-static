@@ -1,0 +1,26 @@
+.ep_tm_key_tools {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  & li:first-child {
+    padding-left: 0px;
+    & a:first-child {
+      color: #fff;
+      background-color: #ffb43d;
+      padding: 9px 28px;
+      border-right: none;
+    }
+    span.logged_in_as {
+      padding-left: 5px;
+      line-height: 45px;  
+      word-break: break-all;
+    }
+  }
+}
+
+.ep_tm_key_tools a:hover, a:hover {
+  color: #FFB43D;
+}
+
+.ep_tm_key_tools li {
+  border-left: 10px !important;
+}

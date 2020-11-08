@@ -1,0 +1,10 @@
+.ep_msg_message_content {
+  background-color: #35d544;
+  border-color: #dbdfe1;
+  color: #fff;
+}
+
+.ep_msg_error_content, .ep_msg_message_content, .ep_msg_other_content, .ep_msg_warning_content {
+  background-image: none;
+  background-repeat: none;
+}

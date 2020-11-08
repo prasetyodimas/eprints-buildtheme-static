@@ -64,27 +64,46 @@
 
                 <div class="ep-content-main">
                     <div class="row">
-                        <div class="col-md-4 col-lg-4">
+                        <div class="col-md-4 col-lg-4" id="sidebar-action">
                             <!-- Sidebar -->
                             <div id="sidebar">
-                                <nav id="menu">
+                                <nav id="menu" class="navigation__menu">
                                     <ul>
                                         <li><a href="/index.html">home</a></li>
                                         <li><a href="/about.html">about</a></li>
                                         <li>
-                                        <span class="opener">Browse</span>
-                                        <ul>
-                                            <li><a href="">browse by years</a></li>
-                                            <li><a href="">browse by subjects</a></li>
-                                            <li><a href="">browse by divisions</a></li>
-                                            <li><a href="">browse by authors</a></li>
-                                        </ul>
+                                            <span class="opener trigger-collapse">
+                                                Browse
+                                                <img src="/assets/icon/arrow-top.svg" alt="icon-triangle" class="icon"/>
+                                            </span>
+                                            <ul class="">
+                                                <li><a href="">browse by years</a></li>
+                                                <li><a href="">browse by subjects</a></li>
+                                                <li><a href="">browse by divisions</a></li>
+                                                <li><a href="">browse by authors</a></li>
+                                            </ul>
                                         </li>
                                         <li><a href="/help.html">Help</a></li>
                                         <li><a href="/policies.html">Policies</a></li>
                                         <li><a href="/statistic.html">Statistic</a></li>
                                     </ul>
                                 </nav>
+                            </div>
+                            <div class="ep-section-rss">
+                                <ul class="ep-ul__rss">
+                                    <li>
+                                        <img src="/assets/icon/rss-small.svg" alt="icon-rss"/>
+                                        <a href="">Atom</a>
+                                    </li>
+                                    <li>
+                                        <img src="/assets/icon/rss-small.svg" alt="icon-rss"/>
+                                        <a href="">RSS.1.0</a>
+                                    </li>
+                                    <li>
+                                        <img src="/assets/icon/rss-small.svg" alt="icon-rss"/>
+                                        <a href="">RSS.2.0</a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                         <div class="col-md-8 col-lg-8 pl-0">

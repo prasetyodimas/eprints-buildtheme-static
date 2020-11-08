@@ -9,14 +9,30 @@
 @import './component/grid.scss';
 @import './component/header.scss';
 @import './component/search.scss';
+@import './component/menu.scss';
 @import './component/button.scss';
 @import './component/sidebar.scss';
 @import './component/login.scss';
 @import './component/main.scss';
-@import './component/ep-latest-additions.scss';
+@import './component/footer.scss';
 @import './component/form-input.scss';
 @import './component/list-group.scss';
-@import './component/footer.scss';
+
+// Eprints Overide Styles 
+@import './component/eprints-style/ep_datepicker.scss';
+@import './component/eprints-style/ep_table_irstat.scss';
+@import './component/eprints-style/ep_messages.scss';
+@import './component/eprints-style/ep_status_loggin.scss';
+@import './component/eprints-style/ep_keytools_navigation.scss';
+@import './component/eprints-style/ep_editor_showfile.scss';
+@import './component/eprints-style/ep_phrasee_table.scss';
+@import './component/eprints-style/ep_input.scss';
+@import './component/eprints-style/ep_citation.scss';
+@import './component/eprints-style/ep_content.scss';
+@import './component/eprints-style/ep_buttons.scss';
+@import './component/eprints-style/ep_footer.scss';
+@import './component/eprints-style/ep_latest_additions.scss';
+@import './component/eprints-style/ep_manage-deposit.scss';
 
 @import './utils/colors.scss';
 @import './utils/helper.scss';

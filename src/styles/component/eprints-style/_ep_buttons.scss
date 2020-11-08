@@ -1,0 +1,37 @@
+.ep_blister_node_selected, 
+.ep_form_action_button, 
+.ep_form_internal_button, 
+.ep_tm_searchbarbutton {
+  background-color: #ffb43d !important; 
+}
+
+.ep_form_action_button {
+  padding: 8px 12px !important;
+}
+
+.ep_blister_node {
+  border-color: #ccc;
+  background-color: #2ebaae;
+  background-image: none;
+  color: #fff;
+
+  &:hover {
+    background-color: #000;
+  }
+}
+
+.ep_blister_node, .ep_blister_node_selected, .ep_form_action_button {
+  text-align: center;
+  padding: 15px 25px;
+  cursor: pointer;
+}
+
+.ep_form_internal_button {
+  padding: 5px 10px;
+}
+
+.ep_form_action_button, .ep_form_internal_button, .ep_tm_searchbarbutton, .ep_blister_node_selected {
+  border-color: #f5c899 #e0b22f #d49c00 #f3ad11;
+  background-color: #ffb43d;
+  color: white;
+}

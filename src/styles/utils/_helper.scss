@@ -14,3 +14,18 @@
 .mb-15 {
   margin-bottom: 15px;
 }
+
+.text-white {
+  color: #fff !important;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .pl-0 {
+    padding-left: 15px;
+  }
+}
