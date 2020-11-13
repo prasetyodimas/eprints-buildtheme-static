@@ -4,15 +4,27 @@
   background-color: #005689;
   margin: 0 auto;
   width: 100%;
-  .epm-authority {
-    color: #fff;
+  .ep-authority {
     text-align: center;
-    padding: 35px 10px;
-    height: 100px;
+    padding: 15px 10px;
+    height: auto;
     span {
+      color: #fff;
       font-size: 11px;
     }
     p {
+      color: #fff;
+      font-size: 11px;
+    }
+    text-align: center;
+    padding-top: 1em;
+    .ep-toolsbox {
+      a {
+        color: #fff;
+      }
+    }
+    .ep-information-indexer {
+      color: #fff;
       font-size: 11px;
     }
   }
