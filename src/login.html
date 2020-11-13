@@ -64,21 +64,24 @@
 
                 <div class="ep-content-main">
                     <div class="row">
-                        <div class="col-md-4 col-lg-4">
+                        <div class="col-md-4 col-lg-4" id="sidebar-action">
                             <!-- Sidebar -->
                             <div id="sidebar">
-                                <nav id="menu">
+                                <nav id="menu" class="navigation__menu">
                                     <ul>
                                         <li><a href="/index.html">home</a></li>
                                         <li><a href="/about.html">about</a></li>
                                         <li>
-                                        <span class="opener">Browse</span>
-                                        <ul>
-                                            <li><a href="">browse by years</a></li>
-                                            <li><a href="">browse by subjects</a></li>
-                                            <li><a href="">browse by divisions</a></li>
-                                            <li><a href="">browse by authors</a></li>
-                                        </ul>
+                                            <span class="opener trigger-collapse">
+                                                Browse
+                                                <img src="/assets/icon/arrow-top.svg" alt="icon-triangle" class="icon"/>
+                                            </span>
+                                            <ul class="">
+                                                <li><a href="">browse by years</a></li>
+                                                <li><a href="">browse by subjects</a></li>
+                                                <li><a href="">browse by divisions</a></li>
+                                                <li><a href="">browse by authors</a></li>
+                                            </ul>
                                         </li>
                                         <li><a href="/help.html">Help</a></li>
                                         <li><a href="/policies.html">Policies</a></li>
@@ -125,7 +128,18 @@
                 <!-- footer -->
                 <div class="row">
                     <div class="ep-footer-app col-md-12 col-lg-12">
-                        <div class="epm-authority ">
+                        <div class="ep-authority">
+                            <div class="ep-toolsbox">
+                                <a href="http://v2.sherpa.ac.uk/id/repository/3865">OpenDOAR</a>
+                                <a href="http://roar.eprints.org/12433/">ROAR</a><br>
+                                <a title="ios" href="http://onesearch.id/Search/Results?filter[]=repoId:IOS3803" target="_blank">
+                                    <img src="https://journal.ugm.ac.id/public/site/images/admin/index/onesearch.png" alt="Indonesia One Search" width="113" height="auto">
+                                </a>
+                                <a title="GS" href="https://scholar.google.co.id/citations?user=BKQ9E80AAAAJ&amp;hl=id" target="_blank">
+                                    <img src="https://journal.ugm.ac.id/public/site/images/admin/index/googlescholarwarning.png" alt="Google Scholar" width="113" height="auto">
+                                </a>
+                            </div>
+                            <div class="ep-information-indexer">Repository has been indexed in some indexers.</div>
                             <span> @Copyright by Perpustakaan Kemendikbud All rights reserved.</span>
                             <p>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</p>
                         </div>
