@@ -58,8 +58,8 @@ var configIcon = {
   }
 }
 
-$('#share-social-fb').jsSocials(configIcon.facebook);
-$('#share-social-all').jsSocials(
-  configIcon.allVariant,
-  configIcon.allVariant.mediaQuery
-);
+// $('#share-social-fb').jsSocials(configIcon.facebook);
+// $('#share-social-all').jsSocials(
+//   configIcon.allVariant,
+//   configIcon.allVariant.mediaQuery
+// );
