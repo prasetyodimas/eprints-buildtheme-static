@@ -1,0 +1,16 @@
+#sidebar-action {
+  overflow: hidden;
+  position: relative;
+  #sidebar {
+    display: none;
+  }
+}
+
+.burger-menu__responsive {
+  .burger-menu__infoadmin {
+    font-size: 15px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+  }
+}

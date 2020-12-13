@@ -18,6 +18,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no" />
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
     <body>
@@ -35,14 +36,20 @@
                         </div>
                     </div>
                 </div>
-                <!-- login action -->
-                <div class="ep-login-action">
-                    <a href="/login.html" class="ep-button-login">Login</a>
+                <!-- remove login action when logout! -->
+                <div class="ep-login-action logout">
+                    <a href="/index.html" class="ep-button-login" id="logout">Logout</a>
                 </div>
 
                 <div class="ep-content-main">
                     <div class="row">
                         <div class="col-md-4 col-lg-4" id="sidebar-action">
+                            <div class="burger-menu__responsive">
+                                <a href="javascript:void(0);" class="icon" id="collapse-menu">
+                                    <i class="fa fa-bars fa-1x"></i>
+                                </a>
+                                <a href="#" class="active burger-menu__infoadmin">Menu Sidebar</a>
+                            </div>
                             <!-- Sidebar -->
                             <div id="sidebar">
                                 <nav id="menu" class="navigation__menu">
@@ -66,9 +73,25 @@
                                         <li><a href="/statistic.html">Statistic</a></li>
                                     </ul>
                                 </nav>
+                                <div class="ep-section-rss">
+                                    <ul class="ep-ul__rss">
+                                        <li>
+                                            <img src="/assets/icon/rss-small.svg" alt="icon-rss"/>
+                                            <a href="">Atom</a>
+                                        </li>
+                                        <li>
+                                            <img src="/assets/icon/rss-small.svg" alt="icon-rss"/>
+                                            <a href="">RSS.1.0</a>
+                                        </li>
+                                        <li>
+                                            <img src="/assets/icon/rss-small.svg" alt="icon-rss"/>
+                                            <a href="">RSS.2.0</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-8 col-lg-8 pl-0">
+                        <div class="col-md-8 col-lg-8 pl-0" id="replace-class">
                             <div class="ep-content-center">
                                 <h2 class="text-center"><b>Login Area</b></h2>
                                 <div class="ep-content-login">

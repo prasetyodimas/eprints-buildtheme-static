@@ -27,7 +27,7 @@
         <meta property="og:image:alt" content="kemendikbud logo"/>
         <meta property="og:description" content="Repositori Institusi Kementerian Pendidikan dan Kebudayaan Republik Indonesia (Repositori Institusi Kemendikbud RI) adalah sebuah layanan informasi digital yang menyediakan akses terbuka (open access) dan daring (online) kepada publik terkait dengan berbagai informasi di bidang pendidikan dan kebudayaan yang dihasilkan oleh seluruh unit kerja di lingkungan Kemendikbud dalam berbagai format. Repositori Institusi Kemendikbud RI juga merupakan sarana yang digunakan Perpustakaan Kemendikbud dalam mengumpulkan seluruh karya yang dihasilkan oleh seluruh unit kerja di lingkungan Kemendikbud agar dapat diakses secara luas dan mudah oleh publik."/>
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-        <script async defer src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
     <body>
@@ -51,8 +51,9 @@
                         <div class="col-sm-12 col-md-10 col-lg-10">
                             <!-- login action -->
                             <div class="ep-login-action">
-                                <a href="/login.html" class="ep-button-login">Login</a>
+                                <a href="/login.html" class="ep-button-login" id="login">Login</a>
                             </div>
+
                         </div>
                         <div class="col-sm-12 col-md-2 col-lg-2">
                             <ul class="ep-icons icons">
@@ -77,6 +78,12 @@
 
                     <div class="row">
                         <div class="col-md-4 col-lg-4" id="sidebar-action">
+                            <div class="burger-menu__responsive">
+                                <div href="javascript:void(0);" class="icon" id="collapse-menu">
+                                    <i class="fa fa-bars fa-1x"></i>
+                                    <a href="#" class="active burger-menu__infoadmin">Menu Sidebar</a>
+                                </div>
+                            </div>
                             <!-- Sidebar -->
                             <div id="sidebar">
                                 <nav id="menu" class="navigation__menu">
@@ -100,22 +107,22 @@
                                         <li><a href="/statistic.html">Statistic</a></li>
                                     </ul>
                                 </nav>
-                            </div>
-                            <div class="ep-section-rss">
-                                <ul class="ep-ul__rss">
-                                    <li>
-                                        <img src="/assets/icon/rss-small.svg" alt="icon-rss"/>
-                                        <a href="">Atom</a>
-                                    </li>
-                                    <li>
-                                        <img src="/assets/icon/rss-small.svg" alt="icon-rss"/>
-                                        <a href="">RSS.1.0</a>
-                                    </li>
-                                    <li>
-                                        <img src="/assets/icon/rss-small.svg" alt="icon-rss"/>
-                                        <a href="">RSS.2.0</a>
-                                    </li>
-                                </ul>
+                                <div class="ep-section-rss">
+                                    <ul class="ep-ul__rss">
+                                        <li>
+                                            <img src="/assets/icon/rss-small.svg" alt="icon-rss"/>
+                                            <a href="">Atom</a>
+                                        </li>
+                                        <li>
+                                            <img src="/assets/icon/rss-small.svg" alt="icon-rss"/>
+                                            <a href="">RSS.1.0</a>
+                                        </li>
+                                        <li>
+                                            <img src="/assets/icon/rss-small.svg" alt="icon-rss"/>
+                                            <a href="">RSS.2.0</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-8 col-lg-8 pl-0" id="replace-class">
